@@ -1,0 +1,251 @@
+.chat-list-sidebar {
+  width: 320px;
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.chat-list-header {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.chat-list-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.btn-new-chat {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-new-chat:hover {
+  background: #4338ca;
+}
+
+.btn-new-chat:active {
+  transform: scale(0.98);
+}
+
+.chat-items-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 12px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 4px;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.chat-item:hover {
+  background: #f8fafc;
+}
+
+.chat-item.active {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.chat-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.chat-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.chat-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.chat-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e293b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-id-badge {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.chat-preview {
+  font-size: 12px;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty-chat-list {
+  padding: 40px 20px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.empty-chat-list p {
+  margin-bottom: 14px;
+}
+
+/* Modal for New Chat */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  animation: fadeInModal 0.2s ease-out;
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-header {
+  padding: 18px 22px;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.btn-close-modal {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #94a3b8;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.btn-close-modal:hover {
+  color: #475569;
+}
+
+.modal-body {
+  padding: 18px 22px;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.select-user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-bottom: 6px;
+  border: 1px solid #f1f5f9;
+}
+
+.select-user-item:hover {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.select-user-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-start-chat {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-start-chat:hover {
+  background: #4338ca;
+}
+
+@media (max-width: 768px) {
+  .chat-list-sidebar {
+    width: 100%;
+    height: 100%;
+  }
+}

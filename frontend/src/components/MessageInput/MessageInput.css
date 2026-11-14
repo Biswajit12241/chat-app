@@ -1,0 +1,54 @@
+.message-input-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.message-input-field {
+  flex: 1;
+  border: 1px solid #cbd5e1;
+  border-radius: 24px;
+  padding: 10px 18px;
+  font-size: 14px;
+  outline: none;
+  background: #f8fafc;
+  color: #1e293b;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.message-input-field:focus {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.message-send-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.25);
+}
+
+.message-send-btn:hover:not(:disabled) {
+  background: #4338ca;
+  transform: scale(1.04);
+}
+
+.message-send-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+  box-shadow: none;
+}

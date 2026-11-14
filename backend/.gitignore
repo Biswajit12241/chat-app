@@ -1,0 +1,15 @@
+# Dependencies & Build
+node_modules/
+dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Secrets & Service Accounts
+secrets/
+*serviceAccount*.json
+serviceAccountKey*.json
+*.pem
+*.key

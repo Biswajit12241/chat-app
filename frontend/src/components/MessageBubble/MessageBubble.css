@@ -1,0 +1,83 @@
+.message-bubble-wrapper {
+  display: flex;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.message-bubble-wrapper.sent {
+  justify-content: flex-end;
+}
+
+.message-bubble-wrapper.received {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 72%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.message-bubble.sent {
+  background: #4f46e5;
+  color: #ffffff;
+  border-bottom-right-radius: 4px;
+}
+
+.message-bubble.received {
+  background: #f1f5f9;
+  color: #1e293b;
+  border-bottom-left-radius: 4px;
+}
+
+.message-text {
+  font-size: 14px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.message-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.message-bubble.sent .message-footer {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.message-bubble.received .message-footer {
+  color: #94a3b8;
+}
+
+.message-status-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.read-check-double {
+  color: #6ee7b7;
+}
+
+.read-check-single {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.last-seen-indicator {
+  font-size: 10px;
+  background: rgba(16, 185, 129, 0.15);
+  color: #065f46;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 4px;
+  align-self: flex-end;
+  display: inline-block;
+}

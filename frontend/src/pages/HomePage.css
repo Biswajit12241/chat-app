@@ -1,0 +1,166 @@
+.home-page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  padding: 24px;
+}
+
+.home-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+  padding: 36px 32px;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.app-logo-badge {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.home-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+}
+
+.home-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+  font-weight: 500;
+}
+
+.assignment-notice {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  margin: 0 0 12px 0;
+}
+
+.users-selection-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.user-select-card {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.user-select-card:hover {
+  border-color: #6366f1;
+  background: #f8fafc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.1);
+}
+
+.user-card-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 17px;
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+
+.user-card-details {
+  flex: 1;
+}
+
+.user-card-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.user-card-email {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.user-id-tag {
+  display: inline-block;
+  font-size: 11px;
+  color: #4f46e5;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.btn-enter-chat {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-enter-chat:hover {
+  background: #4338ca;
+}
+
+.tech-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.tech-pill {
+  font-size: 11px;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 24px;
+  color: #64748b;
+  font-size: 14px;
+}
